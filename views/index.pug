@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1(class='title')= title
+  p Welcome to #{title}
+  form(action="#")
+    input(class="new-message")
+    button(type="submit" onclick="onSubmitMessage()") Send
+  ul(class="chat")
+    li Start messaging
